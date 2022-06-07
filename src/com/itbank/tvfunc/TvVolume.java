@@ -17,6 +17,10 @@ public void volume() {
 			continue;
 		}else if(a == '-') {
 			num = num - 1;
+			if(num < 0) {
+				System.out.println("음소거 상태입니다.");
+				break;
+			}
 			continue;
 		}else if(a == '!'){
 			break;
